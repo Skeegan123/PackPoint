@@ -282,7 +282,6 @@
 			mainGroup = 1024C3F629F0DE85007D9685;
 			packageReferences = (
 				10381D0529F7A7F6007096F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				1013A90629FD9D63001D1ACF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
 				105D48F729FEFD8300505FFA /* XCRemoteSwiftPackageReference "ASCollectionView" */,
 			);
 			productRefGroup = 1024C40029F0DE85007D9685 /* Products */;
@@ -569,14 +568,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1013A90629FD9D63001D1ACF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		10381D0529F7A7F6007096F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
