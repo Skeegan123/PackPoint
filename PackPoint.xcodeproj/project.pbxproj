@@ -7,18 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1013A8F229FC203D001D1ACF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1013A8F129FC203D001D1ACF /* GoogleService-Info.plist */; };
+		1013A8F429FC3304001D1ACF /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013A8F329FC3304001D1ACF /* Onboarding.swift */; };
+		1013A8F729FC3EAB001D1ACF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013A8F629FC3EAB001D1ACF /* Login.swift */; };
+		1013A8FE29FCAC81001D1ACF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013A8FD29FCAC81001D1ACF /* User.swift */; };
+		1013A90029FCAD67001D1ACF /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013A8FF29FCAD67001D1ACF /* Point.swift */; };
+		1013A90329FCB58F001D1ACF /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013A90229FCB58F001D1ACF /* LoginModel.swift */; };
+		1013A90529FCDEF0001D1ACF /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1013A90429FCDEF0001D1ACF /* UserDefaultsManager.swift */; };
 		1024C40329F0DE85007D9685 /* PackPointApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024C40229F0DE85007D9685 /* PackPointApp.swift */; };
 		1024C40529F0DE85007D9685 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024C40429F0DE85007D9685 /* ContentView.swift */; };
 		1024C40729F0DE86007D9685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1024C40629F0DE86007D9685 /* Assets.xcassets */; };
 		1024C40A29F0DE86007D9685 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1024C40929F0DE86007D9685 /* Preview Assets.xcassets */; };
+		10381CF529F4ECBD007096F5 /* Onboarding1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10381CF429F4ECBD007096F5 /* Onboarding1.swift */; };
+		10381CF729F6CACF007096F5 /* Onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10381CF629F6CACF007096F5 /* Onboarding2.swift */; };
+		10381CF929F6CB68007096F5 /* Onboarding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10381CF829F6CB68007096F5 /* Onboarding3.swift */; };
+		10381CFB29F6D8D7007096F5 /* LaunchPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10381CFA29F6D8D7007096F5 /* LaunchPage.storyboard */; };
+		10381CFD29F6DD67007096F5 /* LogIn1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10381CFC29F6DD67007096F5 /* LogIn1.swift */; };
+		10381CFF29F6FDAC007096F5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10381CFE29F6FDAC007096F5 /* MainView.swift */; };
+		10381D1229F9935A007096F5 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10381D1129F9935A007096F5 /* AuthManager.swift */; };
+		10381D1429F996A8007096F5 /* LogIn2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10381D1329F996A8007096F5 /* LogIn2.swift */; };
+		10381D1629F9A4D3007096F5 /* Yay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10381D1529F9A4D3007096F5 /* Yay.swift */; };
+		105D48BD29FDAC0800505FFA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 105D48BC29FDAC0800505FFA /* FirebaseAnalytics */; };
+		105D48BF29FDAC0800505FFA /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 105D48BE29FDAC0800505FFA /* FirebaseAnalyticsOnDeviceConversion */; };
+		105D48C129FDAC0800505FFA /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 105D48C029FDAC0800505FFA /* FirebaseAnalyticsSwift */; };
+		105D48C329FDAC0800505FFA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 105D48C229FDAC0800505FFA /* FirebaseAuth */; };
+		105D48C529FDAC0800505FFA /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 105D48C429FDAC0800505FFA /* FirebaseCrashlytics */; };
+		105D48CB29FDCF3100505FFA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48CA29FDCF3100505FFA /* LocationManager.swift */; };
+		105D48CD29FDE48600505FFA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48CC29FDE48600505FFA /* MainViewModel.swift */; };
+		105D48CF29FDECAA00505FFA /* PointCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48CE29FDECAA00505FFA /* PointCard.swift */; };
+		105D48D629FE25F000505FFA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48D529FE25F000505FFA /* ProfileView.swift */; };
+		105D48D829FE260D00505FFA /* CreatePointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48D729FE260D00505FFA /* CreatePointView.swift */; };
+		105D48DC29FE29F300505FFA /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48DB29FE29F300505FFA /* MainContentView.swift */; };
+		105D48E429FE405D00505FFA /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48E329FE405D00505FFA /* SearchBar.swift */; };
+		105D48E629FE408900505FFA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48E529FE408900505FFA /* MapView.swift */; };
+		105D48E829FE43C700505FFA /* PointInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48E729FE43C700505FFA /* PointInfo.swift */; };
+		105D48F029FE7F6600505FFA /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48EF29FE7F6600505FFA /* ProfileViewModel.swift */; };
+		105D48F229FEA26900505FFA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48F129FEA26900505FFA /* ImagePicker.swift */; };
+		105D48F429FEEE5800505FFA /* PickerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48F329FEEE5800505FFA /* PickerSection.swift */; };
+		105D48FD29FF02E300505FFA /* TagCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48FC29FF02E300505FFA /* TagCloud.swift */; };
+		105D48FF29FF25B700505FFA /* CreatePointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48FE29FF25B700505FFA /* CreatePointViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1013A8F029FC1F3B001D1ACF /* PackPoint.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PackPoint.entitlements; sourceTree = "<group>"; };
+		1013A8F129FC203D001D1ACF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1013A8F329FC3304001D1ACF /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		1013A8F629FC3EAB001D1ACF /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		1013A8FD29FCAC81001D1ACF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1013A8FF29FCAD67001D1ACF /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		1013A90229FCB58F001D1ACF /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		1013A90429FCDEF0001D1ACF /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		1024C3FF29F0DE85007D9685 /* PackPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PackPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1024C40229F0DE85007D9685 /* PackPointApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackPointApp.swift; sourceTree = "<group>"; };
 		1024C40429F0DE85007D9685 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1024C40629F0DE86007D9685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1024C40929F0DE86007D9685 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10381CF429F4ECBD007096F5 /* Onboarding1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1.swift; sourceTree = "<group>"; };
+		10381CF629F6CACF007096F5 /* Onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2.swift; sourceTree = "<group>"; };
+		10381CF829F6CB68007096F5 /* Onboarding3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3.swift; sourceTree = "<group>"; };
+		10381CFA29F6D8D7007096F5 /* LaunchPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchPage.storyboard; sourceTree = "<group>"; };
+		10381CFC29F6DD67007096F5 /* LogIn1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn1.swift; sourceTree = "<group>"; };
+		10381CFE29F6FDAC007096F5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		10381D0029F70536007096F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		10381D1029F8C5A2007096F5 /* PackPointRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PackPointRelease.entitlements; sourceTree = "<group>"; };
+		10381D1129F9935A007096F5 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		10381D1329F996A8007096F5 /* LogIn2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn2.swift; sourceTree = "<group>"; };
+		10381D1529F9A4D3007096F5 /* Yay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yay.swift; sourceTree = "<group>"; };
+		105D48CA29FDCF3100505FFA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		105D48CC29FDE48600505FFA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		105D48CE29FDECAA00505FFA /* PointCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCard.swift; sourceTree = "<group>"; };
+		105D48D529FE25F000505FFA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		105D48D729FE260D00505FFA /* CreatePointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePointView.swift; sourceTree = "<group>"; };
+		105D48DB29FE29F300505FFA /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		105D48E329FE405D00505FFA /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		105D48E529FE408900505FFA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		105D48E729FE43C700505FFA /* PointInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointInfo.swift; sourceTree = "<group>"; };
+		105D48EF29FE7F6600505FFA /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		105D48F129FEA26900505FFA /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		105D48F329FEEE5800505FFA /* PickerSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSection.swift; sourceTree = "<group>"; };
+		105D48FC29FF02E300505FFA /* TagCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCloud.swift; sourceTree = "<group>"; };
+		105D48FE29FF25B700505FFA /* CreatePointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePointViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +94,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105D48C129FDAC0800505FFA /* FirebaseAnalyticsSwift in Frameworks */,
+				105D48BD29FDAC0800505FFA /* FirebaseAnalytics in Frameworks */,
+				105D48C529FDAC0800505FFA /* FirebaseCrashlytics in Frameworks */,
+				105D48BF29FDAC0800505FFA /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				105D48C329FDAC0800505FFA /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1013A8F529FC3E8A001D1ACF /* NotUsing */ = {
+			isa = PBXGroup;
+			children = (
+				1024C40429F0DE85007D9685 /* ContentView.swift */,
+				10381CFC29F6DD67007096F5 /* LogIn1.swift */,
+				10381D1329F996A8007096F5 /* LogIn2.swift */,
+				10381CF429F4ECBD007096F5 /* Onboarding1.swift */,
+				10381CF629F6CACF007096F5 /* Onboarding2.swift */,
+				10381CF829F6CB68007096F5 /* Onboarding3.swift */,
+			);
+			path = NotUsing;
+			sourceTree = "<group>";
+		};
+		1013A8F829FCABD3001D1ACF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				10381D1129F9935A007096F5 /* AuthManager.swift */,
+				1013A90429FCDEF0001D1ACF /* UserDefaultsManager.swift */,
+				105D48CA29FDCF3100505FFA /* LocationManager.swift */,
+				105D48F129FEA26900505FFA /* ImagePicker.swift */,
+				105D48F329FEEE5800505FFA /* PickerSection.swift */,
+				105D48FC29FF02E300505FFA /* TagCloud.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1013A8F929FCAC28001D1ACF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1013A8FD29FCAC81001D1ACF /* User.swift */,
+				1013A8FF29FCAD67001D1ACF /* Point.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1013A90129FCB154001D1ACF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1013A90229FCB58F001D1ACF /* LoginModel.swift */,
+				105D48CC29FDE48600505FFA /* MainViewModel.swift */,
+				105D48E529FE408900505FFA /* MapView.swift */,
+				105D48EF29FE7F6600505FFA /* ProfileViewModel.swift */,
+				105D48FE29FF25B700505FFA /* CreatePointViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		1024C3F629F0DE85007D9685 = {
 			isa = PBXGroup;
 			children = (
 				1024C40129F0DE85007D9685 /* PackPoint */,
 				1024C40029F0DE85007D9685 /* Products */,
+				1062D0C229FDA4AA0031DC0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,11 +172,20 @@
 		1024C40129F0DE85007D9685 /* PackPoint */ = {
 			isa = PBXGroup;
 			children = (
+				105D48DD29FE3FF900505FFA /* Elements */,
+				1013A90129FCB154001D1ACF /* ViewModels */,
+				1013A8F929FCAC28001D1ACF /* Models */,
+				1013A8F829FCABD3001D1ACF /* Utils */,
+				1013A8F029FC1F3B001D1ACF /* PackPoint.entitlements */,
+				10381D1029F8C5A2007096F5 /* PackPointRelease.entitlements */,
+				1013A8F129FC203D001D1ACF /* GoogleService-Info.plist */,
+				10381D0029F70536007096F5 /* Info.plist */,
 				1024C41029F0E1C2007D9685 /* Views */,
 				1024C40229F0DE85007D9685 /* PackPointApp.swift */,
-				1024C40429F0DE85007D9685 /* ContentView.swift */,
+				105D48DB29FE29F300505FFA /* MainContentView.swift */,
 				1024C40629F0DE86007D9685 /* Assets.xcassets */,
 				1024C40829F0DE86007D9685 /* Preview Content */,
+				10381CFA29F6D8D7007096F5 /* LaunchPage.storyboard */,
 			);
 			path = PackPoint;
 			sourceTree = "<group>";
@@ -71,8 +201,32 @@
 		1024C41029F0E1C2007D9685 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1013A8F529FC3E8A001D1ACF /* NotUsing */,
+				10381CFE29F6FDAC007096F5 /* MainView.swift */,
+				10381D1529F9A4D3007096F5 /* Yay.swift */,
+				1013A8F329FC3304001D1ACF /* Onboarding.swift */,
+				1013A8F629FC3EAB001D1ACF /* Login.swift */,
+				105D48CE29FDECAA00505FFA /* PointCard.swift */,
+				105D48D529FE25F000505FFA /* ProfileView.swift */,
+				105D48D729FE260D00505FFA /* CreatePointView.swift */,
+				105D48E729FE43C700505FFA /* PointInfo.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		105D48DD29FE3FF900505FFA /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				105D48E329FE405D00505FFA /* SearchBar.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		1062D0C229FDA4AA0031DC0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +245,13 @@
 			dependencies = (
 			);
 			name = PackPoint;
+			packageProductDependencies = (
+				105D48BC29FDAC0800505FFA /* FirebaseAnalytics */,
+				105D48BE29FDAC0800505FFA /* FirebaseAnalyticsOnDeviceConversion */,
+				105D48C029FDAC0800505FFA /* FirebaseAnalyticsSwift */,
+				105D48C229FDAC0800505FFA /* FirebaseAuth */,
+				105D48C429FDAC0800505FFA /* FirebaseCrashlytics */,
+			);
 			productName = PackPoint;
 			productReference = 1024C3FF29F0DE85007D9685 /* PackPoint.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +280,11 @@
 				Base,
 			);
 			mainGroup = 1024C3F629F0DE85007D9685;
+			packageReferences = (
+				10381D0529F7A7F6007096F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1013A90629FD9D63001D1ACF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				105D48F729FEFD8300505FFA /* XCRemoteSwiftPackageReference "ASCollectionView" */,
+			);
 			productRefGroup = 1024C40029F0DE85007D9685 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1024C40A29F0DE86007D9685 /* Preview Assets.xcassets in Resources */,
+				1013A8F229FC203D001D1ACF /* GoogleService-Info.plist in Resources */,
 				1024C40729F0DE86007D9685 /* Assets.xcassets in Resources */,
+				10381CFB29F6D8D7007096F5 /* LaunchPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +313,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105D48CF29FDECAA00505FFA /* PointCard.swift in Sources */,
+				105D48FF29FF25B700505FFA /* CreatePointViewModel.swift in Sources */,
+				105D48E629FE408900505FFA /* MapView.swift in Sources */,
+				105D48DC29FE29F300505FFA /* MainContentView.swift in Sources */,
+				105D48F229FEA26900505FFA /* ImagePicker.swift in Sources */,
+				1013A8FE29FCAC81001D1ACF /* User.swift in Sources */,
+				105D48CB29FDCF3100505FFA /* LocationManager.swift in Sources */,
+				105D48E829FE43C700505FFA /* PointInfo.swift in Sources */,
+				10381CF929F6CB68007096F5 /* Onboarding3.swift in Sources */,
+				10381D1629F9A4D3007096F5 /* Yay.swift in Sources */,
+				10381D1229F9935A007096F5 /* AuthManager.swift in Sources */,
+				1013A90029FCAD67001D1ACF /* Point.swift in Sources */,
+				105D48F029FE7F6600505FFA /* ProfileViewModel.swift in Sources */,
+				1013A8F729FC3EAB001D1ACF /* Login.swift in Sources */,
+				105D48D829FE260D00505FFA /* CreatePointView.swift in Sources */,
+				1013A90529FCDEF0001D1ACF /* UserDefaultsManager.swift in Sources */,
+				105D48FD29FF02E300505FFA /* TagCloud.swift in Sources */,
+				10381D1429F996A8007096F5 /* LogIn2.swift in Sources */,
+				10381CFF29F6FDAC007096F5 /* MainView.swift in Sources */,
+				1013A8F429FC3304001D1ACF /* Onboarding.swift in Sources */,
+				105D48D629FE25F000505FFA /* ProfileView.swift in Sources */,
+				10381CF529F4ECBD007096F5 /* Onboarding1.swift in Sources */,
+				105D48E429FE405D00505FFA /* SearchBar.swift in Sources */,
+				105D48F429FEEE5800505FFA /* PickerSection.swift in Sources */,
+				1013A90329FCB58F001D1ACF /* LoginModel.swift in Sources */,
+				10381CF729F6CACF007096F5 /* Onboarding2.swift in Sources */,
 				1024C40529F0DE85007D9685 /* ContentView.swift in Sources */,
 				1024C40329F0DE85007D9685 /* PackPointApp.swift in Sources */,
+				10381CFD29F6DD67007096F5 /* LogIn1.swift in Sources */,
+				105D48CD29FDE48600505FFA /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,17 +468,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = PackPoint/PackPoint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PackPoint/Preview Content\"";
 				DEVELOPMENT_TEAM = FPZ9SSZ53C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PackPoint/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PackPoint;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSCameraUsageDescription = "PackPoint needs your camera because in order to share a point you need to include a picture";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "PackPoint needs to know your location because the app finds points near you to check out";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchPage.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,9 +495,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.keegangaffney.PackPoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,17 +509,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = PackPoint/PackPointRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PackPoint/Preview Content\"";
 				DEVELOPMENT_TEAM = FPZ9SSZ53C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PackPoint/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PackPoint;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSCameraUsageDescription = "PackPoint needs your camera because in order to share a point you need to include a picture";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "PackPoint needs to know your location because the app finds points near you to check out";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchPage.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,9 +536,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.keegangaffney.PackPoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -347,6 +567,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1013A90629FD9D63001D1ACF /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		10381D0529F7A7F6007096F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		105D48F729FEFD8300505FFA /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		105D48BC29FDAC0800505FFA /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10381D0529F7A7F6007096F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		105D48BE29FDAC0800505FFA /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10381D0529F7A7F6007096F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		105D48C029FDAC0800505FFA /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10381D0529F7A7F6007096F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		105D48C229FDAC0800505FFA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10381D0529F7A7F6007096F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		105D48C429FDAC0800505FFA /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10381D0529F7A7F6007096F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1024C3F729F0DE85007D9685 /* Project object */;
 }
