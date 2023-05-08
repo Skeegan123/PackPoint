@@ -13,6 +13,7 @@ struct ProfileView: View {
     @State private var showingActionSheet = false
     @State var signOut: Bool = false
     @State private var isLoading = true
+    @State private var showingAlert = false
     
     @StateObject private var locationManager = LocationManager()
     @StateObject private var profileViewModel = ProfileViewModel()
@@ -53,6 +54,9 @@ struct ProfileView: View {
                                         }
                                         print("User signed out")
                                     }),
+                                    .destructive(Text("Delete Account"), action: {
+                                        showingAlert = true
+                                    }),
                                     .cancel()
                                 ])
                             }
@@ -67,7 +71,7 @@ struct ProfileView: View {
                     if isLoading {
                         ProgressView() // This will show a loading spinner
                     } else if profileViewModel.points.isEmpty {
-                        Text("No points near you.") // This will show when there are no points
+                        Text("You havent created any points.") // This will show when there are no points
                     } else {
                         ForEach(profileViewModel.points) { point in
                             NavigationLink(destination: PointInfo(point: point, distance: profileViewModel.calculateDistance(point: point, userLocation: locationManager.location ?? CLLocation()))) {
@@ -94,6 +98,21 @@ struct ProfileView: View {
                 }
             }
         }
+        .alert("Are you sure you want to delete your account?", isPresented: $showingAlert) {
+            Button("Delete", role: .destructive) {
+                ProfileViewModel().deleteUser() { result in
+                    switch result {
+                    case .success(let message):
+                        signOut = true
+                        print(message)
+                    case .failure(let error):
+                        print("Error: \(error)")
+                    }
+                }
+            }
+            Button("Cancel", role: .cancel) {}
+        }
+        .padding()
         .refreshable {
             locationManager.updateLocation()
             profileViewModel.fetchUsersPoints { result in

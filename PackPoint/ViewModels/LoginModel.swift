@@ -52,7 +52,6 @@ class LoginModel {
         AuthManager().getFirebaseIdToken { result in
             switch result {
             case .success(let idToken):
-//                print("2Successfully got Firebase ID token")
                 let url = URL(string: "https://packpoint.azurewebsites.net/api/users")
                 var request = URLRequest(url: url!)
                 request.httpMethod = "POST"

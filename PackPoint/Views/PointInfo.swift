@@ -7,10 +7,13 @@
 
 import SwiftUI
 import CoreLocation
+import FirebaseAuth
 
 struct PointInfo: View {
     let point: Point
     let distance: CLLocationDistance
+    @State private var showAlert = false
+    @State private var deleted = false
     
     @StateObject private var locationManager = LocationManager()
     
@@ -203,10 +206,11 @@ struct PointInfo: View {
                                     Text(amenitiesString.isEmpty ? "\(amenitiesString)" : "None specified")
                                         .font(.subheadline)
                                         .foregroundColor(Color(red: 53/255, green: 53/255, blue: 53/255))
+                                    Spacer()
                                 }
                             }.padding(.vertical)
+                            
                         }.padding(.horizontal)
-                        Spacer()
                     }
                     Text("Location")
                         .font(.title2)
@@ -222,11 +226,48 @@ struct PointInfo: View {
                                 locationManager.updateLocation()
                             }
                     }
-                    .padding(.bottom, 50)
+                    .padding(.bottom)
                     .frame(width: 350, height: 250)
                     
+                    if Auth.auth().currentUser!.uid == point.firebase_uid {
+                        Button {
+                            showAlert = true
+                        } label: {
+                            Text("Delete Point")
+                                .foregroundColor(.red)
+                                .fontWeight(.semibold)
+                                .font(.title3)
+                                .frame(width: 350, height: 50)
+                                .background(Color.white)
+                                .cornerRadius(25)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .stroke(.red, lineWidth: 2)
+                                )
+                        }.padding(.bottom)
+
+                    }
+                    
                 }
-            }.ignoresSafeArea()
+            }
+            .alert("Are you sure you want to delete this point?", isPresented: $showAlert) {
+                Button("Delete", role: .destructive) {
+                    PointInfoModel().deletePoint(pointId: "\(point.id)") { result in
+                        switch result {
+                        case .success(let message):
+                            deleted = true
+                            print(message)
+                        case .failure(let error):
+                            print("Error: \(error)")
+                        }
+                    }
+                }
+                Button("Cancel", role: .cancel) {}
+            }
+            .alert("Point Deleted", isPresented: $deleted) {
+                Button("Ok", role: .cancel) {}
+            }
+            .ignoresSafeArea()
             
             .navigationBarBackButtonHidden(true)
             

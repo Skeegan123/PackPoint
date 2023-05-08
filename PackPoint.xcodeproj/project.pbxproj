@@ -46,6 +46,7 @@
 		105D48F429FEEE5800505FFA /* PickerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48F329FEEE5800505FFA /* PickerSection.swift */; };
 		105D48FD29FF02E300505FFA /* TagCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48FC29FF02E300505FFA /* TagCloud.swift */; };
 		105D48FF29FF25B700505FFA /* CreatePointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D48FE29FF25B700505FFA /* CreatePointViewModel.swift */; };
+		10BBB95A2A098278009A67A8 /* PointInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BBB9592A098278009A67A8 /* PointInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		105D48F329FEEE5800505FFA /* PickerSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSection.swift; sourceTree = "<group>"; };
 		105D48FC29FF02E300505FFA /* TagCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCloud.swift; sourceTree = "<group>"; };
 		105D48FE29FF25B700505FFA /* CreatePointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePointViewModel.swift; sourceTree = "<group>"; };
+		10BBB9592A098278009A67A8 /* PointInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				105D48E529FE408900505FFA /* MapView.swift */,
 				105D48EF29FE7F6600505FFA /* ProfileViewModel.swift */,
 				105D48FE29FF25B700505FFA /* CreatePointViewModel.swift */,
+				10BBB9592A098278009A67A8 /* PointInfoModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -177,10 +180,10 @@
 				1013A90129FCB154001D1ACF /* ViewModels */,
 				1013A8F929FCAC28001D1ACF /* Models */,
 				1013A8F829FCABD3001D1ACF /* Utils */,
+				1024C41029F0E1C2007D9685 /* Views */,
 				1013A8F029FC1F3B001D1ACF /* PackPoint.entitlements */,
 				10381D1029F8C5A2007096F5 /* PackPointRelease.entitlements */,
 				10381D0029F70536007096F5 /* Info.plist */,
-				1024C41029F0E1C2007D9685 /* Views */,
 				1024C40229F0DE85007D9685 /* PackPointApp.swift */,
 				105D48DB29FE29F300505FFA /* MainContentView.swift */,
 				1024C40629F0DE86007D9685 /* Assets.xcassets */,
@@ -321,6 +324,7 @@
 				105D48CB29FDCF3100505FFA /* LocationManager.swift in Sources */,
 				105D48E829FE43C700505FFA /* PointInfo.swift in Sources */,
 				10381CF929F6CB68007096F5 /* Onboarding3.swift in Sources */,
+				10BBB95A2A098278009A67A8 /* PointInfoModel.swift in Sources */,
 				10381D1629F9A4D3007096F5 /* Yay.swift in Sources */,
 				10381D1229F9935A007096F5 /* AuthManager.swift in Sources */,
 				1013A90029FCAD67001D1ACF /* Point.swift in Sources */,
