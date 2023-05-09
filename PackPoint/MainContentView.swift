@@ -121,7 +121,9 @@ struct MainContentView: View {
             Color(.white)
                 .ignoresSafeArea()
             CustomTabView()
-        }.navigationBarBackButtonHidden(true)
+        }
+        .preferredColorScheme(.light)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

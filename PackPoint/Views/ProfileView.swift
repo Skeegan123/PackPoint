@@ -21,7 +21,6 @@ struct ProfileView: View {
     var body: some View {
         ZStack {
             Color(.white)
-                .ignoresSafeArea()
             ScrollView {
                 VStack {
                     HStack {
@@ -112,6 +111,7 @@ struct ProfileView: View {
             }
             Button("Cancel", role: .cancel) {}
         }
+        .ignoresSafeArea()
         .padding()
         .refreshable {
             locationManager.updateLocation()
